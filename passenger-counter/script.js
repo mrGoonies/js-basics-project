@@ -19,8 +19,23 @@ function increment() {
     return 
 }  
 
-document.getElementById("count-el").innerText = peopleCounter
+/**
+ * Decrement people counter with 1 minus.
+ * If the counter is 0, do not decrement.
+ * @returns null
+ */
+function decrement() {
+    console.log("Decrement button was clicked")
 
+    if (peopleCounter > 0) {
+        peopleCounter--;
+    } 
 
+    countEl.innerText = peopleCounter
 
+    console.log(peopleCounter)
 
+    return
+}
+
+document.getElementById("count-el").innerText = peopleCounter   
