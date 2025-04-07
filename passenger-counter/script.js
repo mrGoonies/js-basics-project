@@ -1,3 +1,4 @@
+let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el")
 console.log(countEl)
 
@@ -33,6 +34,16 @@ function decrement() {
 
     countEl.innerText = peopleCounter
 
+    console.log(peopleCounter)
+
+    return
+}
+
+function save() {
+    console.log("Save button was clicked")
+    saveEl.innerText += ` ${peopleCounter} - `
+    countEl.textContent = 0
+    peopleCounter = 0
     console.log(peopleCounter)
 
     return
