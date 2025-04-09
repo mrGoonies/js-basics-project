@@ -23,3 +23,20 @@ h1 {
 p {
     font-size: 2rem;
 }
+
+#start-game-btn {
+    color: #016f32;
+    background-color: goldenrod;
+    width: 25rem;
+    padding: 1rem 0 1rem 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#start-game-btn:hover {
+    background-color: #016f32;
+    color: white;
+}
+
